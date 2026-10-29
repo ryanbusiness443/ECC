@@ -152,6 +152,19 @@
       "args": ["-y", "@playwright/mcp", "--browser", "chrome"],
       "description": "Browser automation and testing via Playwright"
     },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"],
+      "description": "Let Claude see and debug your open Chrome tabs (console, network, performance) via Chrome DevTools - free, runs locally"
+    },
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY_HERE"
+      },
+      "description": "Live web search and research via the official Perplexity MCP - needs a paid Perplexity API key"
+    },
     "fal-ai": {
       "command": "npx",
       "args": ["-y", "fal-ai-mcp-server"],
